@@ -2,6 +2,7 @@ body {
   background-color: rgb(230,230,230);
   font-family: 'Lato', sans-serif;
   text-align: center;
+   background-image: url("images/gray2.png");
 }
 
 .me{
