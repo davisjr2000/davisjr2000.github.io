@@ -1,66 +1,146 @@
-<html>
-<head>
-  <meta charset="utf-8">
-  <title> Davis JR's Profile!</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <script src="script.js"></script>
-</head>
-<body >
-  <div class="white_div">
-   <img src="images/dav.jpg" alt="Me" height= "150" width= "150" class="me">
-   <h1 id="name"> Davis JR </h1>
-   <h2 id="horrible_pun">Full-Steak Developer <img height="40" width="40" src="https://i.pinimg.com/originals/b2/25/03/b2250390ecbbfe7235c6db2d63258e21.png"> </h2>
-   <h4> Currently studyddding at LeWagon</h4>
-   <h6> I miss Back-End </h6>
-   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="red">See for yourself</a>
-   <br>
-    <img src="https://secure.meetupstatic.com/photos/event/d/e/3/3/600_451316883.jpeg" height="30" width="30">
-  </div>
-  <div class="white_div">
-    <h2>Follow me on :</h2>
-   <a class="social" href="https://www.facebook.com/davis.roberto.7"><i class="fab fa-facebook-square"> Facebook</i></a>
-   <br>
-   <a class="social" href="https://github.com/davisjr2000"><i class="fab fa-github"> GitHub</i></a>
-   <br>
-   <a href= class="social"><i class="fab fa-instagram"></i> Instagram</a>
-  </div>
-  <div class="white_div">
-   <h2>Favorite Movies </h2>
-   <table align="center">
-    <tbody>
-      <tr>
-        <td>
-          <img src="images/bttf1.jpg" alt='bttf' height='250' width = '140'>
-        </td>
-        <td>
-          <h3>Back to the Future</h3>
-           <p class="description">Marty accidentally activates the time machine, sending him back to 1955 where he accidentally gets in the way of his teenage parents meeting. Marty must find a way to convince Doc that he is from the future, reunite his parents, and ultimately get back to the future.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img src="images/fclub.jpeg" alt='fc' height='250' width = '140'>
-        </td>
-        <td>
-          <h3>Fight Club</h3>
-          <p class="description">An insomniac man who is an ordinary worker of a huge company, an IKEA buyer and classic consumer of capitalist system is very bored of his ordinary and routine life and meets with a person that is totally who he wants to be. And after that his life changes, with his new friend he creates a fight club that is gonna evolve very big movement all over country that even he can't imagine.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img src="images/aif.jpg" alt='aif' height='250' width = '140'>
-        </td>
-        <td>
-          <h3>Avengers: Infinity War</h3>
-          <p class="description">As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain. </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Davis JR | Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5da6b9dd5c.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="presentation text-center">
+        <h1 class="font-weight-bold">Davis JR | Developer</h1>
+        <p class="font-weight-light">I am a passionate coder that loves to develop apps.</p>
+       <div class="mobile-img m-auto d-block d-lg-none">
+         <img src="images/davis.jpg" class="w-100 h-100 rounded-circle mobile-davis" alt='davisjr'/>
+       </div>
+       <div id="f1_container" class="d-none d-lg-block">
+        <div id="f1_card">
+          <div class="front face">
+            <img src="images/davis.jpg"  class='davis-img rounded-circle' alt="davisjr">
+          </div>
+          <div class="back rounded-circle face center ">
+            <i class="fas fa-rocket"></i>
+          </div>
+        </div>
+      </div>
+        <i class="fas fa-chevron-down blue scroller rounded-circle d-none d-sm-block" onClick="document.getElementById('meet').scrollIntoView();"></i>
+      </div>
+      <div id="meet" class="meet-you text-center">
+        <h3 class="font-weight-bold">Hi, I'm Davis. Nice to meet you.</h3>
+        <p class="font-weight-light">I truly discovered coding through <a href="https://www.lewagon.com" target="_blank" class="text-white font-weight-bold">Le Wagon</a>, a french coding bootcamp. Since then, I've been passionate about web technologies and always look forward to build new amazing products and learn new skills/languages. I love building apps with awesome UX/UI & potencial to improve people's lives. I'd describe myself as a curious and hard working developer, fascinated by how programming can build amazing tools.</p>
+      </div>
+      <div class="dev text-center container rounded">
+        <div class="d-flex">
+          <div class="front-end p-3 w-50">
+            <i class="fab fa-react"></i>
+            <h3>Front-End</h3>
+            <p>I love coding beautiful interfaces that provide awesome user experience.</p>
+            <h4>Skills</h4>
+            <ul class="list-unstyled m-0">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>Bootstrap</li>
+              <li>React.JS</li>
+              <li>Redux</li>
+              <li>SEO</li>
+              <li>SASS</li>
+              <li>jQuery</li>
+              <li>React Native</li>
+              <li>Mobile First</li>
+            </ul>
+          </div>
+          <div class="back-end p-3 w-50">
+            <i class="far fa-gem"></i>
+            <h3>Back-End</h3>
+            <p>I am passionate about building dynamic applications with robust software architeture.</p>
+            <h4>Skills</h4>
+            <ul class="list-unstyled m-0">
+              <li>Ruby</li>
+              <li>Python</li>
+              <li>Ruby on Rails</li>
+              <li>Express.JS</li>
+              <li>AJAX</li>
+              <li>NPM</li>
+              <li>Node.JS</li>
+              <li>PostgreSQL</li>
+              <li>Sqlite3</li>
+              <li>RESTful API</li>
+              <li>Sinatra</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dev-tools pt-4 pb-2">
+          <i class="fas fa-terminal"></i>
+          <h3>Dev Tools</h3>
+          <p>Git, Github, Heroku, AWS, Trello, Terminal</p>
+        </div>
+      </div>
+      <div class="recent-work mt-3 text-center p-5 " id="projects">
+        <h2 class="font-weight-bold">
+          My Recent Work
+        </h2>
+        <p>Here are a few projects I've been involved with.</p>
+        <div class="project-area p-5">
+          <div class="row">
+            <div class="col-sm-6">
+              <%= image_tag "tbc.png", class: "w-100 h-100 rounded shadow" %>
+            </div>
+            <div class="col-sm-6">
+              <h2>The Bike Culture</h2>
+              <p>During my first job, working as a full stack developer at a software house named HortaLab, I joined the development team that was currently building an e-commerce for Brazil's largest Bike Shop. I had a lot of major tasks, such as reorganzing the DB schema for creating the products, improve the UX of the checkout and adding background jobs for realizing the payments. This project in particular made me a learn a lot and gave me confidence as a web developer, especially when working with a team. We used the AGILE Scrum framework and the e-commerce was developed using Ruby on Rails and Heroku.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-area p-5">
+          <div class="row">
+            <div class="col-sm-6">
+              <%= image_tag "fusca.jpg", class: "w-100 h-100 rounded" %>
+            </div>
+            <div class="col-sm-6">
+              <h2>FitLab</h2>
+              <p>When starting my freelancer career, my first request was to build a mobile app for nutricionists to recommend healthy meals to the users.I didn't know how to build mobile apps at the time, so I had to taught myself React Native. It was very tricky at first, due to the complex mobile development envirioment and the differences from web apps to mobile apps, such as navigation. However, I was quickly able to learn it and build an entire app using a framework I didn't know before. The application was built using React Native for front-end backed by a Ruby on Rails API.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-area p-5">
+          <div class="row">
+            <div class="col-sm-6">
+              <%= image_tag "fusca.jpg", class: "w-100 h-100 rounded" %>
+            </div>
+            <div class="col-sm-6">
+              <h2>Mercado Fusca</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facere rerum dolore veritatis fugit modi quasi corrupti autem odio, repudiandae provident, possimus eligendi expedita dolorum adipisci magnam ex unde voluptate?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact p-2 mt-3 mb-0 text-center position-relative" id="contact">
+        <h2 class="font-weight-bold">Contact Me!</h2>
+        <div class="d-none d-lg-block eyes">
+          <div class="eye">
+            <div class="ball"></div>
+          </div>
 
-
- </body>
+          <div class="eye">
+            <div class="ball"></div>
+          </div>
+        </div>
+        <div class="links">
+          <a class="btn-link" target="_blank" href="https://github.com/davisjr2000">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="btn-link" target="_blank" href="https://www.linkedin.com/in/davis-roberto">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="btn-link" target="_blank" href="https://www.instagram.com/_davisroberto/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

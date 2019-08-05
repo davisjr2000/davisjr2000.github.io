@@ -1,9 +1,10 @@
-var person = prompt("Please enter your name", " ");
-
-if (person == null || person == "") {
-    txt = "User cancelled the prompt.";
-    alert(txt)
-} else {
-    txt = "Hello " + person + "! Don't judge my page, I'm a back-end guy :c";
-    alert(txt)
-}
+ var balls = document.getElementsByClassName("ball");
+ document.onmousemove = function(){
+  var x = event.clientX * 100 / window.innerWidth + "%";
+  var y = event.clientY * 100 / window.innerHeight + "%";
+  for(var i=0;i<2;i++){
+    balls[i].style.left = x;
+    balls[i].style.top = y;
+    balls[i].style.transform = "translate(-"+x+",-"+y+")"
+  }
+ }
