@@ -1,10 +1,18 @@
- var balls = document.getElementsByClassName("ball");
- document.onmousemove = function(){
-  var x = event.clientX * 100 / window.innerWidth + "%";
-  var y = event.clientY * 100 / window.innerHeight + "%";
-  for(var i=0;i<2;i++){
-    balls[i].style.left = x;
-    balls[i].style.top = y;
-    balls[i].style.transform = "translate(-"+x+",-"+y+")"
-  }
- }
+var typed = new Typed('#typed', {
+  stringsElement: '#typed-strings',
+  typeSpeed: 55,
+  onComplete: (self) => {
+    document.querySelector(".typed-cursor").classList.add("d-none");
+    document.querySelector(".quote").classList.remove("hidden");
+  },
+
+});
+
+window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    color: "#FFFFFF",
+    connectParticles: true,
+    maxParticles: 70,
+  });
+};
