@@ -109,9 +109,6 @@ section {
   animation-delay: 4s;
 }
 
-
-
-
 @keyframes ripple {
   from {
     border: 4px solid darkgreen;
@@ -139,4 +136,60 @@ section {
   margin-right: 50px;
   border-radius: 5px;
   height: 10%;
+}
+
+/* Contact */
+
+#contact{
+  background-color: black;
+}
+
+.contact-info{
+  padding: 50px;
+  width: 50%;
+}
+
+.contact-info p {
+  line-height: 30px;
+}
+
+.email-button{
+  border-radius: 5px;
+  color: white;
+  background: #23CE6B;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.email-button:hover{
+  background: white;
+  color: #23CE6B;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Mobile */
+
+@media(max-width: 800px){
+  img, .ripple-container{ 
+    display: none;
+  }
+
+  #about-text{
+    width: 100%;
+  }
+
+  section{
+    height: auto;
+  }
+
+  #typed {
+    font-size: 3em;
+  }
+
+  canvas{
+    height: 100% !important;
+  }
 }

@@ -1,3 +1,5 @@
+const isMobilePhone = window.innerWidth <= 800;
+
 var typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
   typeSpeed: 55,
@@ -13,6 +15,6 @@ window.onload = function() {
     selector: '.background',
     color: "#FFFFFF",
     connectParticles: true,
-    maxParticles: 70,
+    maxParticles: isMobilePhone ? 20 : 70,
   });
 };
