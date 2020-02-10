@@ -1,5 +1,4 @@
-
-var typed = new Typed('#typed', {
+const typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
   typeSpeed: 55,
   onComplete: (self) => {
