@@ -1,4 +1,3 @@
-const isMobilePhone = window.innerWidth <= 800;
 
 var typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
@@ -15,6 +14,16 @@ window.onload = function() {
     selector: '.background',
     color: "#FFFFFF",
     connectParticles: true,
-    maxParticles: isMobilePhone ? 20 : 70,
+    maxParticles: 70,
+    responsive: [
+      {
+        breakpoint: 768,
+        options: {
+          maxParticles: 20,
+        }
+      }
+    ]
   });
 };
+
+AOS.init();

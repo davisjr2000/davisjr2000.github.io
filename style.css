@@ -153,26 +153,31 @@ section {
   line-height: 30px;
 }
 
-.email-button{
-  border-radius: 5px;
-  color: white;
-  background: #23CE6B;
-  padding: 10px;
-  font-size: 1em;
+.contact-links{
+  display: flex;
 }
 
-.email-button:hover{
-  background: white;
-  color: #23CE6B;
-}
-
-a{
-  text-decoration: none;
+.display-mobile{
+  display: none;
 }
 
 /* Mobile */
 
 @media(max-width: 800px){
+
+  .display-mobile{
+    display: block;
+  }
+
+  .quote{
+    font-size: 1em;
+    padding-right: 20px;
+  }
+
+  .career-content{
+    padding: 40px;
+  }
+
   img, .ripple-container{ 
     display: none;
   }
@@ -181,7 +186,11 @@ a{
     width: 100%;
   }
 
-  section{
+  .contact-info{
+    width: auto;
+  }
+
+  #about{
     height: auto;
   }
 
@@ -189,7 +198,95 @@ a{
     font-size: 3em;
   }
 
-  canvas{
-    height: 100% !important;
+  .background{
+    height: auto !important;
   }
+}
+
+
+a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+  color: #23CE6B;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+@media(max-width: 680px){
+  #typed{
+   font-size: 2.5em;
+  }
+}
+
+/* Contact Button Animation */
+@media(min-width: 800px){
+  a:hover{
+    color: white;
+    background: #23CE6B;
+    box-shadow: 0 0 10px #23CE6B, 0 0 40px #23CE6B, 0 0 80px #23CE6B;
+    transition-delay: 1s;
+  }
+  a span{
+    position: absolute;
+    display: block;
+  }
+  a span:nth-child(1)  {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#23CE6B);
+  }
+  a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+  }
+  a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#23CE6B);
+  }
+  a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#23CE6B);
+  }
+  a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#23CE6B);
+  }
+  a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+  }
+}
+
+@media(max-width: 680px){
+   #typed{
+    font-size: 2.5em;
+   }
 }
