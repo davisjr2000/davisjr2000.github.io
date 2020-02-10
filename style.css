@@ -141,12 +141,16 @@ section {
 /* Contact */
 
 #contact{
+  display: flex;
   background-color: black;
+  position: relative;
+
 }
 
 .contact-info{
   padding: 50px;
-  width: 50%;
+  width: 60%;
+  z-index: 2;
 }
 
 .contact-info p {
@@ -161,9 +165,26 @@ section {
   display: none;
 }
 
+/* Game */
+
+#game{
+  position: absolute;
+}
+
+#clickgame{
+  color: #23CE6B;
+  cursor: pointer;
+  border-bottom: 1px solid #23CE6B;
+}
+
+
 /* Mobile */
 
 @media(max-width: 800px){
+
+  #pong-game{
+    display: none;
+  }
 
   .display-mobile{
     display: block;
