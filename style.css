@@ -8,7 +8,7 @@ body{
   font-family: 'Roboto Mono', monospace;
 }
 
-::selection { 
+::selection {
   color: #23CE6B;
   background: grey;
 }
@@ -45,7 +45,7 @@ section {
   display: flex;
 }
 
-.section-title{ 
+.section-title{
   font-size: 3em;
   width: max-content;
 }
@@ -178,7 +178,7 @@ section {
     padding: 40px;
   }
 
-  img, .ripple-container{ 
+  img, .ripple-container{
     display: none;
   }
 
@@ -289,54 +289,4 @@ a{
    #typed{
     font-size: 2.5em;
    }
-}
-body {
-  background-color: rgb(230,230,230);
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-}
-
-.me{
-  border-radius: 50%
-}
-
-h1{
-  color: #2324;
-  font-size: 40px;
-}
-
-a{
-  text-decoration: none;
-  color: #424;
-}
-
-p{
-  text-align: justify;
-}
-
-div{
-  background-color: white;
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
-  margin: auto 250px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.description{
-  color: gray;
-  font-size: 15px;
-}
-
-#horrible_pun{
-  margin-top: 5px;
-}
-
-#name{
-  margin-bottom: 5px;
-}
-
-.red{
-  color: red;
 }
