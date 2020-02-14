@@ -76,50 +76,6 @@ section {
   border-radius: 10px;
 }
 
-.ripple-container{
-  position: absolute;
-  margin-top: 30px;
-  left: 50%;
-  transform: translate(-50%, -50%) rotateX(70deg);
-}
-
-.ripple{
-  position: fixed;
-  top: 0;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  animation: ripple 4s linear infinite;
-}
-
-.r2{
-  animation-delay: 0.8s;
-}
-.r3{
-  animation-delay: 1.6s;
-}
-.r4{
-  animation-delay: 2.4s;
-}
-.r5{
-  animation-delay: 3.2s;
-}
-.r6{
-  animation-delay: 4s;
-}
-
-@keyframes ripple {
-  from {
-    border: 4px solid darkgreen;
-    background: #23CE6B;
-    width: 400px;
-    height: 400px;
-    top: 20px;
-    opacity: 0;
-  }
-}
-
 /* Career */
 
 .career-content{
@@ -182,7 +138,7 @@ section {
 
 @media(max-width: 800px){
 
-  #pong-game{
+  #pong-game, .hide-mobile{
     display: none;
   }
 
@@ -199,7 +155,7 @@ section {
     padding: 40px;
   }
 
-  img, .ripple-container{
+  img{
     display: none;
   }
 
