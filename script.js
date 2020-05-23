@@ -3,6 +3,10 @@ const typed = new Typed('#typed', {
   typeSpeed: 55,
   onComplete: (self) => {
     document.querySelector(".typed-cursor").classList.add("d-none");
+    const urlParams = new URLSearchParams(window.location.search);
+    if(urlParams.get('easterEgg') === 'mari'){
+      document.querySelector(".quote").innerHTML = "<em>I'm the 9GAG of programming.</em>";
+    }
     document.querySelector(".quote").classList.remove("hidden");
   },
 
@@ -28,7 +32,7 @@ window.onload = function() {
 AOS.init();
 
 if (window.innerWidth >= 800){
-  
+
   var animate = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) {
     window.setTimeout(callback, 1000 / 60)
   };
@@ -189,7 +193,7 @@ if (window.innerWidth >= 800){
   }
   };
 
-  document.getElementById("game").appendChild(canvas); 
+  document.getElementById("game").appendChild(canvas);
 
   window.addEventListener("keydown", function (event) {
   keysDown[event.keyCode] = true;
@@ -198,7 +202,7 @@ if (window.innerWidth >= 800){
   window.addEventListener("keyup", function (event) {
   delete keysDown[event.keyCode];
   });
-  
+
   const clickGame = document.getElementById("clickgame")
   clickGame.addEventListener('click',  () => {
     animate(step);
