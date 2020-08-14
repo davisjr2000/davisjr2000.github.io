@@ -139,7 +139,7 @@ section {
 
 @media(max-width: 800px){
 
-  #pong-game, .hide-mobile{
+  #game, #pong-game, .hide-mobile{
     display: none;
   }
 
