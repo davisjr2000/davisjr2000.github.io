@@ -4,8 +4,8 @@ const typed = new Typed('#typed', {
   onComplete: (self) => {
     document.querySelector(".typed-cursor").classList.add("d-none");
     const urlParams = new URLSearchParams(window.location.search);
-    if(urlParams.get('easterEgg') === 'mari'){
-      document.querySelector(".quote").innerHTML = "<em>I'm the 9GAG of programming.</em>";
+    if(urlParams.get('easterEgg') === 'true'){
+      document.querySelector(".quote").innerHTML = "<em>Valvula.</em>";
     }
     document.querySelector(".quote").classList.remove("hidden");
   },
